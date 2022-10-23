@@ -1,0 +1,65 @@
+[
+    {
+        "name": "onion",
+        "image": "https://img.freepik.com/free-photo/red-onion-whole-isolated-white_146671-19175.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "vegetables"
+    },
+    {
+        "name": "tomato",
+        "image": "https://img.freepik.com/free-photo/one-fresh-red-tomato-isolated-white_1205-548.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "vegetables"
+    },
+    {
+        "name": "Mushroom",
+        "image": "https://img.freepik.com/free-photo/tasty-champignons-mushrooms-isolated-white-background_185193-70834.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "vegetables"
+    },
+    {
+        "name": "Brocoli",
+        "image": "https://img.freepik.com/free-photo/green-broccoli_1203-6753.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "vegetables"
+    },
+    {
+        "name": "corn",
+        "image": "https://img.freepik.com/free-photo/summer-cob-sweet-agriculture-gold_1339-68.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "vegetables"
+    },
+    {
+        "name": "carrot",
+        "image": "https://img.freepik.com/free-photo/carrots-ready-eat_1205-49.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "vegetables"
+    },
+    {
+        "name": "Orange",
+        "image": "https://img.freepik.com/free-photo/orange-juicy-ripe-circle-citrus_1172-203.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "fruits"
+    },
+    {
+        "name": "Apple",
+        "image": "https://img.freepik.com/free-photo/apples-table_144627-6741.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "fruits"
+    },
+    {
+        "name": "Banana",
+        "image": "https://img.freepik.com/free-photo/green-banana_1203-7859.jpg?size=626&ext=jpg&ga=GA1.2.829848386.1665845734&semt=sph",
+        "price": 465,
+        "id": 1,
+        "category": "fruits"
+    }
+]

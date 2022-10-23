@@ -1,0 +1,28 @@
+.icon_image {
+    border: 3px dotted green;
+    border-radius: 100px;
+    padding: 40px;
+}
+
+.index {
+    padding: 20px;
+    border-radius: 70px;
+    color: white;
+    background-color: #5DA88E;
+
+}
+
+.index:hover {
+    background-color: #FEE4D7;
+    color: #5DA88E;
+}
+
+.zoom {
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.zoom:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}

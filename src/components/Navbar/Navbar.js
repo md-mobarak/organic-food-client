@@ -6,8 +6,9 @@ import { AiOutlineUser, AiFillCloseCircle } from 'react-icons/ai'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import './Navbar.css'
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 const Navbar = () => {
+    const navigate = useNavigate()
     const pathName = useLocation()
     console.log(pathName);
     const [toggleBar, setToggleBar] = useState(false)
@@ -39,10 +40,13 @@ const Navbar = () => {
                     <li >
                         <HiOutlineShoppingBag className='search-bar h-8 w-8'></HiOutlineShoppingBag>
                     </li>
-                    <li className='ml-[-50px]'><AiOutlineUser className='search-bar h-8 w-8'></AiOutlineUser>
+                    <li onClick={() => navigate('/login')} className='ml-[-50px]'><AiOutlineUser className='search-bar h-8 w-8'></AiOutlineUser>
                     </li>
 
                 </ul>
+                <div>
+
+                </div>
             </div>
 
             <div className='lg:hidden'>

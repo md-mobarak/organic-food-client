@@ -10,7 +10,7 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 const PopularProducts = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('product.json')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data)
@@ -39,8 +39,10 @@ const PopularProducts = () => {
                 // className="mySwiper"
                 >
                     {
-                        products.map(product => <div>
-                            key={product.name}
+                        products.map(product => <div
+                            key={product._id}
+                        >
+
                             <SwiperSlide>
                                 <div className="card card-compact w-96 shadow-xl">
                                     <figure><img className='w-96 h-[230px]' src={product.image} alt="Shoes" /></figure>
@@ -48,7 +50,7 @@ const PopularProducts = () => {
                                         <h2 className="card-title text-xl">{product.name}</h2>
                                         <p className='text-xl card-title'>Price ${product.price}</p>
                                         <div className="card-actions justify-end">
-                                            <button className="btn hover:bg-[#5EC49D] bg-[#FDE4D8] w-full text-black hover:text-white rounded-none border-0">Buy Now</button>
+                                            <button className="btn hover:bg-[#5EC49D] bg-[#FDE4D8] w-full text-black hover:text-white rounded-none border-0">Add to cart</button>
                                         </div>
                                     </div>
                                 </div>

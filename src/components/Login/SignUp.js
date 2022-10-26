@@ -21,6 +21,7 @@ const Signup = () => {
     const onSubmit = (data) => {
         createUserWithEmailAndPassword(data.email, data.password)
         reset()
+        return data
     };
 
     const handleGoogle = () => {
@@ -28,7 +29,7 @@ const Signup = () => {
     }
     // const [token] = useHook(user || gUser)
     if (loading || gLoading) {
-        return <h1>Loading...</h1>
+        return <h1 className='text-4xl mt-16 font-bold text-center'>Loading...</h1>
     }
     if (user || gUser) {
         return navigate(from, { replace: true });
@@ -62,7 +63,7 @@ const Signup = () => {
                             {errors && <p>{errors.password?.message}</p>}
                         </div>
                         <div>
-                            <button className='btn btn-accent md:w-[85%] bg-blue-700 lg:text-xl text-white mt-2 w-full lg:w-[65%]'>SUBMIT</button>
+                            <button className='btn btn-accent md:w-[85%] bg-[#59C49D] lg:text-xl text-white mt-2 w-full lg:w-[65%]'>SUBMIT</button>
                         </div>
                     </section>
                 </form>

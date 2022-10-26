@@ -27,7 +27,7 @@ const CustomersReview = () => {
 
                 <Swiper
                     slidesPerView={3}
-                    spaceBetween={2}
+                    spaceBetween={0}
                     slidesPerGroup={1}
                     autoplay={{
                         delay: 2000,
@@ -45,11 +45,22 @@ const CustomersReview = () => {
                     <div>
 
                         {
-                            reviews?.map(review => <SwiperSlide className='px-24 rounded-3xl '>
-                                <h1 className='text-center font-bold text-xl'>{review?.name}</h1>
-                                <img className='rounded-3xl' src={review?.image} alt="" />
+                            reviews?.map(review => <SwiperSlide className='pb-20 shadow-3xl  px-12 rounded-3xl  '>
+                                <div className=' border-4 border-blue-300 bg-[#03fcc2] flex justify-center items-center w-full rounded-xl py-4'>
+                                    <div>
+                                        <h1 className='text-center uppercase font-bold my-6 text-2xl'>{review?.name}</h1>
+                                        {/* <img className='rounded-2xl shadow-2xl' src={review?.image} alt="" /> */}
+                                        <div className="avatar flex justify-center items-center">
+                                            <div className="w-48 rounded-full">
+                                                <img src={review.image} alt='' />
+                                            </div>
+                                        </div>
 
-                                <p>{review.reviews.slice(0, 100)}</p>
+                                        <div className='px-12'>
+                                            <p className='text-xl pb-10 ml-8 mt-5'>{review.reviews.slice(0, 80)}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </SwiperSlide>)
                         }
 

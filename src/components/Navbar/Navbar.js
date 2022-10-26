@@ -10,11 +10,10 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 const Navbar = () => {
     const navigate = useNavigate()
     const pathName = useLocation()
-    console.log(pathName);
     const [toggleBar, setToggleBar] = useState(false)
     return (
-        <div className=''>
-            <div className='flex items-center py-8 lg-hidden'>
+        <div className='lg:sticky lg:top-0 lg:z-40 lg:bg-white'>
+            <div className='flex items-center py-4 lg-hidden'>
                 <ul className='flex justify-evenly w-full items-center'>
                     {/* <li><img className='w-28 h-28' src={logo} alt="" /></li> */}
                     <li className='text-xl'>

@@ -54,7 +54,7 @@ const Login = () => {
                                 className="input input-bordered w-full max-w-xs" />
                         </div>
                         <div>
-                            <button className='btn btn-accent bg-blue-700 md:w-[85%] lg:text-xl text-white mt-2 w-full lg:w-[65%]'>SUBMIT</button>
+                            <button className='btn btn-accent bg-[#59C49D] md:w-[85%] lg:text-xl text-white mt-2 w-full lg:w-[65%]'>SUBMIT</button>
                         </div>
                     </section>
                 </form>
